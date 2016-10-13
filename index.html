@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<br>
+	<br>
+	<form>
+		Temperature: <input type="number" name="startTemp" id="startingTemp"><br>
+
+		Convert to: Celsius <input type="radio" name="startTempType" id="startTempType" onclick="determineConverter('c');" checked="checked"> | Fahrenheit:  <input type="radio" name="startTempType" id="startTempType" onclick="determineConverter('f');"><br>
+
+		<div id="tempDisplay" style="height:150px;width:300px"></div><br>
+
+		<button type="button" name="calcButton" id="calcButton" onclick="convertSubmit();"> >> Convert Temp << </button>
+		<button type="reset" name="resetButton" onclick="resetFields();"> >> Reset Form << </button>
+
+	</form>
+<script src="converter.js"></script>
+</body>
+</html>
